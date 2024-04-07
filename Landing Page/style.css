@@ -470,18 +470,6 @@ html
         position: relative;
         top: 0;
     }
-}
-
-@media (max-width: 644px)
-{
-    .card2
-    {
-        height: 40vh;
-    }
-}
-
-@media (max-width: 625px)
-{
     .card2
     {
         height: 40vh;
