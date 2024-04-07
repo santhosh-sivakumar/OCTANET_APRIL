@@ -1,0 +1,489 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+html
+{
+    padding: 0%;
+    margin: 0%;
+    background: linear-gradient(to right, #6190e8, #a7bfe8); 
+}
+
+.nav
+{
+    height: 3vh;
+    background-color: rgba(0, 0, 0, 0.404);
+
+    position: fixed;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav .licon
+{
+    font-size: 2.5vh;
+    color: whitesmoke;
+}
+.nav .ctext
+{
+    text-align: center;
+    font-size: 2.5vh;
+    color: whitesmoke;
+}
+
+.main
+{
+    width: 97.7vw; height: 150vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    /* Main gridd template */
+    grid-template-rows: 0.2fr 2fr 2fr 2fr 2fr;
+    gap: 1vh;
+
+    padding: 0.5vw;
+    margin: 0;
+}
+
+.toppadding
+{
+    grid-column: span 3;
+    max-height: 3vh;
+}
+
+.banner
+{
+    padding: 1vh;
+    grid-column: span 3;
+    border-radius: 10px; 
+    border: 1px solid;
+
+    display: grid;      /* Banner Grid */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    background: linear-gradient(to right, #000046, #1cb5e0);
+}
+
+.banner .ltext
+{
+    position: relative;
+    top: 38%;
+    text-align: center;
+
+    background: linear-gradient(to right, #c0392b, #8e44ad);
+    background-size: 80%;
+    background-clip: text;
+    background-repeat: no-repeat;
+    color: transparent;
+    font-size:4.5vh;
+    font-weight: bold;
+}
+.banner .logo
+{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3187/3187880.png);
+    background-position: center;
+    background-size: 20vh;
+    background-repeat: no-repeat;
+}
+.banner .social
+{
+    font-size: 4vh;
+    text-align: center;
+
+    position: relative;
+    top: 38%;
+}
+.banner .social i
+{
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(to right, #000, #000, #000, #7b4397, #7b4397, #dc2430, #dc2430);
+    background-position: left;
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+}
+.banner .social i:hover
+{
+    background-position: right;
+}
+
+.card1
+{
+    padding: 1vh;
+    border-radius: 10px; 
+    border: 1px solid;
+    text-align: center;
+
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    background-size: 150%;
+    background-position: left;
+
+    grid-column: span 2;
+}
+
+.card1 h1
+{
+    font-size: 4.1vh;
+    color: rgb(224, 224, 224);
+}
+.card1 p
+{
+    font-size: 2.3vh;
+    color: rgb(224, 224, 224);
+}
+
+.card2
+{
+    padding: 1vh;
+    border-radius: 10px; 
+    border: 1px solid;
+    text-align: center;
+
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    background-size: 250%;
+    background-position: right;
+
+    grid-row: span 2;
+}
+
+.card2 h1
+{
+    font-size: 4.1vh;
+    color: rgb(224, 224, 224);
+    margin-bottom: 6vh;
+}
+.card2 p
+{
+    font-size: 2.3vh;
+    color: rgb(224, 224, 224);
+
+    transition: font-size 0.2s ease-in-out;
+}
+.card2 p:hover
+{
+    font-size: 2.5vh;
+}
+
+
+.card3
+{
+    padding: 1vh;
+    border-radius: 10px; 
+    border: 1px solid;
+    text-align: center;
+
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    background-size: 250%;
+    background-position: left;
+
+    grid-row: span 2;
+}
+
+.card3 h1
+{
+    font-size: 4.1vh;
+    color: rgb(224, 224, 224);
+    margin-bottom: 6vh;
+}
+.card3 .ltext
+{
+    margin-bottom: 2vh;
+}
+.card3 p
+{
+    font-size: 2.3vh;
+    color: rgb(224, 224, 224);
+
+    transition: font-size 0.2s ease-in-out;
+}
+.card3 p:hover
+{
+    font-size: 2.5vh;
+}
+
+
+.card4
+{
+    padding: 1vh;
+    border-radius: 10px; 
+    border: 1px solid;
+    text-align: center;
+
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    background-size: 250%;
+    background-position: center;
+}
+
+.card4 h1
+{
+    font-size: 4.1vh;
+    color: rgb(224, 224, 224);
+}
+.card4 p
+{
+    font-size: 2.3vh;
+    color: rgb(224, 224, 224);
+
+    transition: font-size 0.2s ease-in-out;
+}
+.card4 p:hover
+{
+    font-size: 2.5vh;
+}
+
+.card5
+{
+    padding: 1vh;
+    border-radius: 10px; 
+    border: 1px solid;
+    text-align: center;
+
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    background-size: 250%;
+    background-position: center;
+
+    grid-column: span 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card5 .ltext
+{
+    position: relative;
+    top: 40%;
+
+    font-size: 4.1vh;
+    color: rgb(224, 224, 224);
+}
+.card5 .contact
+{
+    font-size: 2.3vh;
+    color: rgb(224, 224, 224);
+
+    transition: font-size 0.2s ease-in-out;
+}
+.card5 p:hover
+{
+    font-size: 2.5vh;
+}
+
+.roboto
+{
+    font-family: "Roboto", sans-serif;
+}
+
+
+@media (max-width: 1200px) and (min-width: 800px)
+{
+    .main
+    {
+        grid-template-columns: 1fr 1fr;    /* Main gridd template */
+    }   
+    .banner
+    {
+        grid-column: span 3;
+    }
+    .card1
+    {
+        grid-column: span 3;
+        background-size: 100%;
+    }
+    .card2
+    {
+        grid-column: span 2;
+        background-size: 150%;
+        background-position: left;
+        
+        display: grid;
+        grid-template-rows: 10vh 19vh 19vh;
+    }
+
+    .card3
+    {
+        background-position: right;
+        
+        display: grid;
+        grid-template-rows: 10vh 19vh 19vh;
+    }
+    .card4
+    {
+        background-position: left;
+    }
+    .card5
+    {
+        background-size: 150%;
+        background-position: right;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 700px)
+{
+    .main
+    {
+        grid-template-rows: 0.3fr 2fr 2fr 3fr 3fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr;    /* Main gridd template */
+    }   
+    .banner
+    {
+        grid-column: span 3;
+    }
+    .banner .logo
+    {
+        background-size: 10vh;
+    }
+    .banner .social
+    {
+        font-size: 4vw;
+    }
+    .card1
+    {
+        grid-column: span 3;
+        background-size: 100%;
+    }
+    .card2
+    {
+        grid-column: span 2;
+        background-size: 150%;
+        background-position: left;
+
+        display: grid;
+        grid-template-rows: 0.4fr 1fr 1fr;
+    }
+    .card3
+    {
+        background-position: right;
+        
+        display: grid;
+        grid-template-rows: 0.4fr 1fr 1fr;
+    }
+    .card4
+    {
+        grid-column: span 3;
+        background-position: left;
+    }
+    .card5
+    {
+        grid-column: span 3;
+        background-size: 150%;
+        background-position: right;
+    }
+    .card5 .contact
+    {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .main
+    {
+        grid-template-rows: 0.9fr 6fr 2fr 6fr 3fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr;    /* Main gridd template */
+    }   
+    .toppadding
+    {
+        height: 5vh;
+    }
+    .banner
+    {
+        height: 30vh;
+        padding: 0;
+        grid-column: span 3;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .banner .ltext
+    {
+        grid-column: span 3;
+    }
+    .banner .logo
+    {
+        grid-column: span 3;
+    }
+    .banner .social
+    {
+        grid-column: span 3;
+    }
+    .banner .logo
+    {
+        background-size: 10vh;
+    }
+    .banner .social
+    {
+        font-size: 4vw;
+    }
+    .card1
+    {
+        grid-column: span 3;
+        background-size: 100%;
+    }
+    .card2
+    {
+        height: 30vh;
+        grid-column: span 3;
+        background-size: 150%;
+        background-position: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 1fr;
+        gap: 3vw
+    }
+    .card2 h1
+    {
+        grid-column: span 2;
+    }
+    .card3
+    {
+        height: 30vh;
+        grid-column: span 3;
+        background-position: right;
+
+        display: grid;
+        grid-template-rows: 0.4fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card3 h1
+    {
+        grid-column: span 2;
+    }
+    .card4
+    {
+        grid-column: span 3;
+        background-position: left;
+    }
+    .card5
+    {
+        grid-column: span 3;
+        background-size: 150%;
+        background-position: right;
+    }
+    .card5 .contact
+    {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 644px)
+{
+    .card2
+    {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 625px)
+{
+    .card2
+    {
+        height: 40vh;
+    }
+    .card3
+    {
+        height: 40vh
+    }
+}
