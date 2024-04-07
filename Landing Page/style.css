@@ -364,12 +364,13 @@ html
     .card4
     {
         grid-column: span 3;
+        background-size: 100%;
         background-position: left;
     }
     .card5
     {
         grid-column: span 3;
-        background-size: 150%;
+        background-size: 100%;
         background-position: right;
     }
     .card5 .contact
