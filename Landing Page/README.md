@@ -3,7 +3,7 @@
 
 This is the Landing page webpage that I have created for the TASK 1 for the INTERNSHIP with OCTANET.  
   
-https://santhosh-sivakumar.github.io/OCTANET_APRIL/Landing%20Page/  
+![Landing Page](https://santhosh-sivakumar.github.io/OCTANET_APRIL/Landing%20Page/  )
   
 
 
