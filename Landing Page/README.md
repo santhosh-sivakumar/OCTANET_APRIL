@@ -1,6 +1,8 @@
 # Landing Page  
   
 
-This is the Landing page webpage that I have created for the TASK 1 for the INTERNSHIP with OCTANET.
+This is the Landing page webpage that I have created for the TASK 1 for the INTERNSHIP with OCTANET.  
+  
+<a href="https://santhosh-sivakumar.github.io/OCTANET_APRIL/Landing%20Page/">
 
-<img src="https://i.giphy.com/DLz5I4BGyRSOlbSC3o.webp" width="200px" style="border-radius: 20px;">
+<img src="https://i.giphy.com/DLz5I4BGyRSOlbSC3o.webp" width="200px">
