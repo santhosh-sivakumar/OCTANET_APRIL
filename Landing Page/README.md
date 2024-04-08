@@ -7,4 +7,4 @@ This is the Landing page webpage that I have created for the TASK 1 for the INTE
   
 
 
-<img src="https://i.giphy.com/DLz5I4BGyRSOlbSC3o.webp" width="200px">
+<img src="https://i.giphy.com/DLz5I4BGyRSOlbSC3o.webp" width="130px">
