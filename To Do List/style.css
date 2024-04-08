@@ -1,0 +1,12 @@
+*
+{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url("https://cdn.vectorstock.com/i/1000v/24/92/neon-circle-gradient-pattern-background-vector-25842492.avif");
+    background-size: cover;
+    background-position: center;
+}
