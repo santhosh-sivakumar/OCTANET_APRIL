@@ -3,10 +3,110 @@
     margin: 0; padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #240b36;
+}
 
-body
+.circle
 {
-    background-image: url("https://cdn.vectorstock.com/i/1000v/24/92/neon-circle-gradient-pattern-background-vector-25842492.avif");
-    background-size: cover;
-    background-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.circle1
+{
+    background-image: linear-gradient(to top right, #ff00cc, #333399);
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: -1;
+
+    animation: circle1 20s ease infinite;
+}
+.circle2
+{
+    background-image: linear-gradient(to top left, #ff00cc, #333399);
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    z-index: -1;
+    
+    animation: circle1 20s ease 20s infinite;
+}
+.circle3
+{
+    background-image: linear-gradient(to top left, #ff00cc, #333399);
+    position: absolute;
+    top: 16%;
+    left: 71%;
+    z-index: -1;
+}
+.circle4
+{
+    background-image: linear-gradient(to top left, #ff00cc, #333399);
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    z-index: -1;
+
+    animation: circle2 30s ease infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.main
+{
+    backdrop-filter: blur(35px);
+
+    position: absolute;
+    top: 20%; left: 15%; right: 15%; bottom: 20%;
+    border-radius: 5%;
+
+    background-color: #ff0bc20e;
+}
+
+
+@keyframes circle1 {
+    0%
+    {
+        transform: translateX(0px) translateY(0px) scale(1);
+    }
+    25%
+    {
+        transform: translateX(30px) translateY(30px) scale(1.5);
+    }
+    50%
+    {
+        transform: translateX(0px) translateY(30px)scale(1);
+    }
+    75%
+    {
+        transform: translateX(30px) translateY(0px) scale(1);
+    }
+    100%
+    {
+        transform: translateX(0px) translateY(0px) scale(1);
+    }
+}
+
+@keyframes circle2 {
+    0%
+    {
+        transform: translateX(0px) translateY(0px);
+    }
+    25%
+    {
+        transform: translateX(30px) translateY(30px);
+    }
+    50%
+    {
+        transform: translateX(0px) translateY(30px);
+    }
+    75%
+    {
+        transform: translateX(30px) translateY(0px);
+    }
+    100%
+    {
+        transform: translateX(0px) translateY(0px);
+    }
 }
