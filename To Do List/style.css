@@ -1,112 +1,54 @@
 *
 {
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #240b36;
+    margin: 0; padding: 0; box-sizing: border-box;
 }
 
-.circle
+body
 {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    width: 100vw; height: 100vh;
+    background-image: linear-gradient(to right, #4b6cb7, #182848);
 }
-.circle1
+
+.nav
 {
-    background-image: linear-gradient(to top right, #ff00cc, #333399);
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    z-index: -1;
-
-    animation: circle1 20s ease infinite;
+    height: 3.5vh; width: 100vw;
+    background-color: #ffffff34; backdrop-filter: blur(10px);
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    position: fixed; top: 0; bottom: 0;
 }
-.circle2
+.nav .title
 {
-    background-image: linear-gradient(to top left, #ff00cc, #333399);
-    position: absolute;
-    top: 55%;
-    left: 60%;
-    z-index: -1;
-    
-    animation: circle1 20s ease 20s infinite;
+    text-align: center;
 }
-.circle3
+.nav .control
 {
-    background-image: linear-gradient(to top left, #ff00cc, #333399);
-    position: absolute;
-    top: 16%;
-    left: 71%;
-    z-index: -1;
+    font-size: 2.5vh;
+    margin-left: 1vw; margin-top: 0vh;
 }
-.circle4
+.nav .settings
 {
-    background-image: linear-gradient(to top left, #ff00cc, #333399);
-    position: absolute;
-    top: 55%;
-    left: 20%;
-    z-index: -1;
-
-    animation: circle2 30s ease infinite;
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+    text-align: right;
+    font-size: 2.5vh;
+    margin-right: 1vw; margin-top: 0.3vh;
 }
 
-.main
+#menu
 {
-    backdrop-filter: blur(35px);
-
-    position: absolute;
-    top: 20%; left: 15%; right: 15%; bottom: 20%;
-    border-radius: 5%;
-
-    background-color: #ff0bc20e;
+    width: 25vw; height: 0vh; border-radius: 3%;
+    background-color: #ffffff34;
+    position: fixed; top: 4vh; left: 1vh; padding: 0vh 1vh;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    display: grid;
+    grid-template-rows: 5vh 3vh 3vh 3vh;
 }
+#menu .head{display: flex; justify-content: center; align-items: center; padding: 2vh;}
+#menu .option{ display: flex; align-items: center; padding: 1vh;}
+#menu .option:hover{ background-color: #ffffff34; }
 
 
-@keyframes circle1 {
-    0%
-    {
-        transform: translateX(0px) translateY(0px) scale(1);
-    }
-    25%
-    {
-        transform: translateX(30px) translateY(30px) scale(1.5);
-    }
-    50%
-    {
-        transform: translateX(0px) translateY(30px)scale(1);
-    }
-    75%
-    {
-        transform: translateX(30px) translateY(0px) scale(1);
-    }
-    100%
-    {
-        transform: translateX(0px) translateY(0px) scale(1);
-    }
-}
-
-@keyframes circle2 {
-    0%
-    {
-        transform: translateX(0px) translateY(0px);
-    }
-    25%
-    {
-        transform: translateX(30px) translateY(30px);
-    }
-    50%
-    {
-        transform: translateX(0px) translateY(30px);
-    }
-    75%
-    {
-        transform: translateX(30px) translateY(0px);
-    }
-    100%
-    {
-        transform: translateX(0px) translateY(0px);
-    }
-}
+.itim{ font-family: "Itim", cursive; }
+.bold{ font-weight: bold; }
+.h1{ font-size: xx-large; }
+.h2{ font-size: x-large; }
+.h3{ font-size: large; }
