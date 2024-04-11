@@ -1,18 +1,21 @@
 *
 {
     margin: 0; padding: 0; box-sizing: border-box;
+    transition: color 1s ease;
+    transition: background-position 0.5s ease;
 }
 
 body
 {
     width: 100vw; height: 100vh;
-    background-image: linear-gradient(to right, #4b6cb7, #182848);
+    background-image: linear-gradient(to right, #4b6cb7, #4b6cb7,  #000000, #000000);
+    background-size: 300%; background-position: left;
 }
 
 .nav
 {
     height: 3.5vh; width: 100vw;
-    background-color: #ffffff34; backdrop-filter: blur(10px);
+    background-color: #ffffff15;; backdrop-filter: blur(10px);
     display: grid; grid-template-columns: 1fr 1fr 1fr;
     position: fixed; top: 0; bottom: 0;
 }
@@ -34,21 +37,139 @@ body
 
 #menu
 {
-    width: 25vw; height: 0vh; border-radius: 3%;
-    background-color: #ffffff34;
+    width: 25vw; height: 0vh; border-radius: 3%; z-index: 20; background-color: #ffffff15;; backdrop-filter: blur(10px);
     position: fixed; top: 4vh; left: 1vh; padding: 0vh 1vh;
     overflow: hidden;
     transition: all 0.5s ease;
     display: grid;
-    grid-template-rows: 5vh 3vh 3vh 3vh;
+    grid-template-rows: 5vh 3vh 3vh 3vh 3vh;
 }
-#menu .head{display: flex; justify-content: center; align-items: center; padding: 2vh;}
-#menu .option{ display: flex; align-items: center; padding: 1vh;}
+#menu .head{ display: flex; justify-content: center; align-items: center; padding: 2vh; }
+#menu .option{ display: flex; align-items: center; padding: 1vh; }
 #menu .option:hover{ background-color: #ffffff34; }
+#menu .option:active{ background-color: #9e9e9e34; }
 
+#settings
+{
+    width: 25vw; height: 0vh; border-radius: 3%; z-index: 20; background-color: #ffffff15;; backdrop-filter: blur(10px);
+    position: fixed; top: 4vh; right: 4vh; padding: 0vh 1vh;
+    overflow: hidden; transition: all 0.5s ease; display: grid; grid-template-rows: 5vh 3vh;
+}
+#settings .head{ display: flex; justify-content: center; align-items: center; padding: 2vh; }
+#settings .option{ display: flex; align-items: center; padding: 1vh; }
+#settings .option:hover{ background-color: #ffffff34; }
+#settings .option:active{ background-color: #9e9e9e34; }
+
+.content
+{
+    position: fixed; top: 5.5vh; left: 7vh; bottom: 2vh; right: 7vh; z-index: 10; padding: 1.5vw;
+    background-color: #ffffff15; backdrop-filter: blur(90px);
+    border-radius: 2.5%;
+    display: grid; grid-template-rows: 13vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    overflow-y: scroll;
+}
+.content::-webkit-scrollbar
+{
+    display: none;
+}
+.content .heading
+{
+    text-align: center;
+    font-size: xx-large;
+}
+.todo
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2% 98%;
+    border-top: 2px solid #ffffff2c;
+}
+.content .last
+{
+    border-bottom: 2px solid #ffffff2c;
+}
+.todo .todo_value
+{
+    margin-left: 2vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: x-large;
+}
+.todo .todo_checkbox
+{
+    accent-color: skyblue;
+}
+.todo:has(.todo_checkbox:checked)
+{
+    text-decoration: line-through 4px;
+}
+
+
+.gradient-shapes .shape1
+{
+    height: 10vh; width: 10vh; border-radius: 50%; z-index: 0;
+    background-color: rgb(1, 35, 184);
+    position: fixed; bottom: 20vh; left: 50vh;
+    animation: shape1 10s ease infinite;
+}
+.gradient-shapes .shape2
+{
+    height: 10vh; width: 10vh; border-radius: 50%; z-index: -1;
+    background-color: rgb(62, 2, 141);
+    position: fixed; bottom: 40vh; left: 40vh;
+    animation: shape2 50s ease -4s infinite;
+}
+.gradient-shapes .shape3
+{
+    height: 10vh; width: 10vh; border-radius: 50%; z-index: -2;
+    background-color: rgb(2, 90, 141);
+    position: fixed; bottom: 50vh; left: 60vh;
+    animation: shape3 40s ease -10s infinite;
+}
 
 .itim{ font-family: "Itim", cursive; }
 .bold{ font-weight: bold; }
 .h1{ font-size: xx-large; }
 .h2{ font-size: x-large; }
 .h3{ font-size: large; }
+
+
+@keyframes shape1 {
+    0%
+    { transform: scale(1); }    
+    25%
+    { transform: translateY(-50px) scale(2); }
+    50%
+    { transform: scale(0.7); }
+    75%
+    { transform: scale(3); }
+    100%
+    { transform: scale(1); }
+}
+
+@keyframes shape2 {
+    0%
+    { transform: scale(1); }
+    25%
+    { transform: scale(3); }
+    50%
+    { transform: scale(0.9); }
+    75%
+    { transform: scale(3); }
+    100%
+    { transform: scale(1); }
+}
+
+@keyframes shape3 {
+    0%
+    { transform: scale(1); }
+    25%
+    { transform: scale(3); }
+    50%
+    { transform: scale(0.9); }
+    75%
+    { transform: scale(3); }
+    100%
+    { transform: scale(1); }
+}
